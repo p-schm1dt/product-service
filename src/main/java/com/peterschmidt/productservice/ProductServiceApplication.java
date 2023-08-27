@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @RequestMapping("/product")
-
 public class ProductServiceApplication {
-// test
+
+	//test
 	@RequestMapping("/{productId}")
 	public Product getProduct(@PathVariable("productId") int id){
-		return new Product(id,"Max", "Mustermann", "max@mustermann.com");
+		return new Product(id,"iPhone", 999.99);
 	}
 
 	public static void main(String[] args) {

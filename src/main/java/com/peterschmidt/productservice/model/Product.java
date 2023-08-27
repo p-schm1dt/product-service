@@ -2,38 +2,28 @@ package com.peterschmidt.productservice.model;
 
 public class Product {
     private int id;
-    private String firstName;
-    private String lastName;
-    private String email;
+    private String name;
+    private double price;
 
-    public Product(int id, String firstName, String lastName, String email) {
+    public Product(int id, String name, double price) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
+        this.name = name;
+        this.price = price;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public double getPrice() {
+        return price;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
